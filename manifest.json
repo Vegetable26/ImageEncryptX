@@ -1,0 +1,19 @@
+{
+  "name": "Test",
+  "version": "0",
+  "description": "Decrypt your images",
+  "background": {"page": "background.html"},
+  "manifest_version": 2,
+  "browser_action": {
+    "name": "Manipulate DOM",
+    "icons": ["icon.jpg"],
+    "default_icon": "icon.jpg",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery-2.1.3.min.js", "background.js" ],
+    "css": ["style.css"],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+
+}
